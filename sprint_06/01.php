@@ -10,8 +10,8 @@ $out = '';
 # write your code under this line
 
 $i = 0;
-while ($i < $foo){
-    $i++;
+while ($i <= $foo){    
     $out .= $i.'_';
+    $i++;
 }
-echo $out; //1_2_3_4_
+echo $out; //0_1_2_3_4_

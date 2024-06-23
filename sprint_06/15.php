@@ -11,7 +11,7 @@ $p = 1;
 # write your code under this line
 
 $i = 0;
-while ($i <= 17) {
+while ($i <= $n) {
     $i++;
     if ($p > 2000) break;
     $p *= $i;
