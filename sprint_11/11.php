@@ -8,7 +8,7 @@
 function f11($arr){
   $maxIn = $arr[0];
   foreach ($arr as $index => $item){
-    if ($item < $maxIn) $maxIn = $item[$index];
+    if ($item > $maxIn) $maxIn = $index;
   }
   return $maxIn;
 }
