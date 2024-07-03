@@ -17,9 +17,5 @@ else
 }
 echo $result, "\n";//200
 
-$foo = 20;
 
-if ($foo == 10) $result = 200;
-else $result = 300;
-echo $result, "\n";//300
 

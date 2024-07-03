@@ -18,9 +18,9 @@ $res;
 
 function f13(){
     global $size, $res;
-    if ($size >= 0 && $size <= 999) $res = strval($size).'B';
-    elseif ($size >= 1000 && $size <= 999999) $res = strval($size).'kB';
-    elseif ($size > 999999) $res = strval($size).'MB';
+    if ($size >= 0 && $size <= 999) $res = $size.'B';
+    elseif ($size >= 1000 && $size <= 999999) $res = floor($size / 1000).'kB';
+    elseif ($size > 999999) $res = floor($size / 1000000).'MB';
 }
 
 f13(); // запуск для проверки

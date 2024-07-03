@@ -10,10 +10,11 @@ $p = 1;
 
 # write your code under this line
 
-$i = 0;
+$i = 1;
 while ($i <= $n) {
-    $i++;
     if ($p > 2000) break;
     $p *= $i;
+    $i++;
 }
-echo $p; //5040
+echo $p, "\n"; //5040
+
