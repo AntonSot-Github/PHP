@@ -15,13 +15,16 @@ _1234
 # write your code under this line
 
 function f14(){
-    $d = "";
+    $str = "";
+    $acc = "";
     for ($k = 4; $k > 0; $k--){
         for ($i = $k; $i > 0; $i--){
-            echo "_";
-        }        
-        echo $d = $k.$d,"\n";
+            $str .= "_";
+        }
+        $str .= $k.$acc."\n";
+        $acc = $k.$acc;
     }
+    return $str;
 }
 
 

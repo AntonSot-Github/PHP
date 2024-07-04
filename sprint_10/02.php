@@ -15,14 +15,17 @@
 # write your code under this line
 
 function f02(){
+    $str = "";
     for($k = 1; $k <= 3; $k++){
-        echo $k, "\n";
+        $str .= $k."\n";
         for ($i = 0; $i < 3; $i++){
-            echo "*";
+            $str .= "*";
         }
-        echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 $res = f02();
 echo ($res);
+

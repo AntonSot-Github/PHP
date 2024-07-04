@@ -12,13 +12,15 @@
 # write your code under this line
 
 function f03(){
+    $str = "";
     for($k = 1; $k <= 3; $k++){
-        echo $k."_";
+        $str .= $k."_";
         for ($i = 0; $i < 3; $i++){
-            echo "*";
+            $str .= "*";
         }
-        echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 

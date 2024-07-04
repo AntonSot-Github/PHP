@@ -17,12 +17,14 @@
 # write your code under this line
 
 function f10(){
+    $str = "";
     for ($k = 6; $k > 0; $k--){
         for ($i = 0; $i < $k; $i++){
-            echo "*";
+            $str .= "*";
         }
-        echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 

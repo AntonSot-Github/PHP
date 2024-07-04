@@ -19,15 +19,18 @@
 # write your code under this line
 
 function f04($s){
+    $str = "";
     for ($k = 1; $k <= 3; $k++){
-        echo $k."_";
+        $str .= $k."_";
         for ($i = 0; $i < $s; $i++){
-        echo "*";
+        $str .= "*";
         }
-    echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 
 $res = f04(6);
 echo ($res);
+var_dump($res);

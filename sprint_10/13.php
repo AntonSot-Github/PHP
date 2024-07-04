@@ -15,16 +15,17 @@
 # write your code under this line
 
 function f13($lines){
-    echo "\n";
+    $str = "";
     $i = 0;
     for ($k = 0; $k <= $lines; $k++){
-        echo $k;
+        $str .= $k;
         do {
-            if ($k % 2 == 0) echo "**\n";
-            else echo "*\n";
+            if ($k % 2 == 0) $str .= "**\n";
+            else $str .= "*\n";
             $i++;
         } while ($i <= $k);
     }
+    return $str;
 }
 
 $res = f13(5);

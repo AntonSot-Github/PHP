@@ -10,12 +10,14 @@
 # write your code under this line
 
 function f01(){
+    $str = "";
     for($k = 0; $k < 3; $k++){
         for($i = 0; $i < 3; $i++){
-            echo "*";
+            $str .= "*";
         }
-        echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 

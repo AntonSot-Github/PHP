@@ -16,12 +16,14 @@
 # write your code under this line
 
 function f08(){
+    $str = "";
     for ($k = 0; $k < 5; $k++){
         for ($i = 0; $i < 10; $i++){
-            echo $k.$i."_";
+            $str .= $k.$i."_";
         }
-        echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 

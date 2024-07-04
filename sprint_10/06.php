@@ -23,13 +23,15 @@
 # write your code under this line
 
 function f06($fnum){
+    $str = "";
     for ($k = 1; $k <= 3; $k++){
-        echo $k."_";
+        $str .= $k."_";
         for ($i = $fnum; $i >= 0; $i--){
-            echo $i;
+            $str .= $i;
         }
-        echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 

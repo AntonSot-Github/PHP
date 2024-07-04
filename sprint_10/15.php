@@ -14,22 +14,24 @@ _*******_
 # write your code under this line
 
 function f15(){
+    $str = "";
     $f = 3;
     $d = 3;
     for ($k = 0; $k < 3; $k++){
         for ($i = 0; $i < $f; $i++){
-            echo "_";
+            $str .= "_";
         }
         for ($i = 0;  $i < $d; $i++){
-            echo "*";
+            $str .= "*";
         }
         for ($i = 0; $i < $f; $i++){
-            echo "_";
+            $str .= "_";
         }
-        echo "\n";
+        $str .= "\n";
         $f--;
         $d += 2;
     }
+    return $str;
 }
 
 

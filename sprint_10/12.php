@@ -17,14 +17,14 @@
 # write your code under this line
 
 function f12($lines){
-    echo "\n\n";
+    $str = "";
     for ($k = $lines; $k >= 0; $k--){
         for ($i = 0; $i <= $k; $i++){
-            echo $i."_";
+            $str .= $i."_";
         }
-        echo "\n";
+        $str .= "\n";
     }
-    echo "\n\n";
+    return $str;
 }
 
 

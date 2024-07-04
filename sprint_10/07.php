@@ -25,12 +25,14 @@
 # write your code under this line
 
 function f07($lines, $num){
+    $str = "";
     for ($k = 0; $k < $lines; $k++){
         for ($i = 0; $i <= $num; $i++){
-            echo $i."_";
+            $str .= $i."_";
         }
-        echo "\n";
+        $str .= "\n";
     }
+    return $str;
 }
 
 
