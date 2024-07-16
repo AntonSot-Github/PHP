@@ -10,10 +10,13 @@
 $db = [4, 5, '6', '7', 7, 3, '24'];
 
 function array_to_int($arr) {
-   
+   $newArr = array_map(function($item){
+    return intval($item);
+   }, $arr);
+   return $newArr;
 }
 
 
 
-$result = array_to_int($arr); 
+$result = array_to_int($db); //$result = array_to_int($arr); - Здесь был передан несуществующий массив. Исправил
 print_r($result);

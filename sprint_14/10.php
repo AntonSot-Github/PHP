@@ -10,7 +10,13 @@ $db = ['Hello' , 't aSk', '  go ', 'yiI2   ', '', '', '2   ', 'teSt ' ];
 
 
 function array_prepare($arr) {
-   
+   $arrOfCleanedStr = [];
+   foreach($arr as $item){
+    if($item !== ''){
+        array_push($arrOfCleanedStr, trim(strtolower($item)));
+    }
+   }
+   return $arrOfCleanedStr;
 }
 
 

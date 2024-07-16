@@ -30,7 +30,11 @@ $db = array (
 );
 
 function getValue($arr, $field) {
-
+    $newArr = [];
+    foreach ($arr as $item){
+        if (isset($item[$field])) array_push($newArr, $item[$field]);
+    }
+    return $newArr;
 }
 
 $result = getValue($db, 'name'); 

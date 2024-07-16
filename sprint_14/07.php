@@ -10,7 +10,10 @@
 $db = [4, 5, 6, 7, 7, 3, 2];
 
 function array_is_int($arr) {
-   
+   foreach ($arr as $item){
+    if (is_int($item) !== true) return false;
+   }
+   return true; 
 }
 
 

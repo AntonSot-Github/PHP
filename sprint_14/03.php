@@ -21,6 +21,9 @@ $db = array (
 );
 
 function getColumnName($arr) {
+    return $newArr = array_map(function($item){
+        return $item["name"];
+    }, $arr);
 }
 
 $result = getColumnName($db); 

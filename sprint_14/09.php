@@ -15,7 +15,11 @@
 
 
 function array_int_generate($n) {
-   
+   $arrOfNumbers = [];
+   for ($i = 0; $i < $n; $i++){
+    array_push($arrOfNumbers, random_int(0, 100));
+   }
+   return $arrOfNumbers;
 }
 
 

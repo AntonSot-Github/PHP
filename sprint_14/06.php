@@ -9,12 +9,15 @@
 
 $db = ['dddd', 'cscs', 'prsr', 'cant'];
 
-function arrayEveryString($arr, $call ) {
-   
+function arrayEveryString($arr, $call) {
+    foreach ($arr as $item){
+        if ($call($item) === false) return false;
+    }
+   return true; 
 }
 
 function callback6($item) {
-
+    return strlen($item) == 4;
 }
 
 $result = arrayEveryString($db, 'callback6'); 

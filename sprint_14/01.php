@@ -23,9 +23,12 @@ $db = array (
 );
 
 function getName($arr) {
-
+    $newArr = [];
+    foreach ($arr as $item){
+        if ($item["name"]) array_push($newArr, $item["name"]);
+    }
+    return $newArr;
 }
 
 $result = getName($db); 
 print_r($result);
-

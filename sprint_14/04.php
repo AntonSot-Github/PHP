@@ -27,7 +27,13 @@ $db = array (
     "516b" => array ("name" => 'Riley', "age" => 22),
 );
 
+
 function getColumn($arr, $field) {
+    $result = [];
+    foreach ($arr as $index => $item) {
+        $result[$index] = $item[$field];
+    }
+    return $result;
 }
 
 $result = getColumn($db, 'name'); 
